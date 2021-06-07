@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrendingVenuesHomeViewController" customModule="TrendingVenues" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="0Gs-pg-pvK" id="6uT-vx-QgB"/>
+                <outlet property="bottomConstraint" destination="B2s-sg-2p0" id="87S-ex-g0K"/>
+                <outlet property="noDataLabel" destination="bdz-kZ-2Oh" id="CW6-Ot-HU9"/>
+                <outlet property="searchBar" destination="HqZ-Vl-x7m" id="Z8o-uZ-0sL"/>
+                <outlet property="tableView" destination="OW4-MY-tbe" id="ew6-Wv-ezt"/>
+                <outlet property="view" destination="iN0-l3-epB" id="AGZ-VU-DNd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HqZ-Vl-x7m">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" systemColor="systemBackgroundColor"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="KhE-R3-WId"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OW4-MY-tbe">
+                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="otc-Eg-Uyl"/>
+                        <outlet property="delegate" destination="-1" id="Fhg-k9-WQ6"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="0Gs-pg-pvK">
+                    <rect key="frame" x="197" y="443" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdz-kZ-2Oh">
+                    <rect key="frame" x="186" y="442.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="HqZ-Vl-x7m" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0TY-D6-OVq"/>
+                <constraint firstItem="OW4-MY-tbe" firstAttribute="top" secondItem="HqZ-Vl-x7m" secondAttribute="bottom" id="4qN-DU-DJI"/>
+                <constraint firstAttribute="bottom" secondItem="OW4-MY-tbe" secondAttribute="bottom" id="B2s-sg-2p0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bdz-kZ-2Oh" secondAttribute="trailing" constant="20" id="Kxo-I8-pnr"/>
+                <constraint firstItem="0Gs-pg-pvK" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="L2w-W5-Gja"/>
+                <constraint firstItem="HqZ-Vl-x7m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NZl-ve-bqZ"/>
+                <constraint firstItem="bdz-kZ-2Oh" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="PDM-oH-CgM"/>
+                <constraint firstItem="OW4-MY-tbe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TsL-JE-knk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OW4-MY-tbe" secondAttribute="trailing" id="WCS-C4-j5z"/>
+                <constraint firstItem="bdz-kZ-2Oh" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="YQs-g9-jdM"/>
+                <constraint firstItem="bdz-kZ-2Oh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="g5n-eN-O4L"/>
+                <constraint firstItem="HqZ-Vl-x7m" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="j73-si-VNM"/>
+                <constraint firstItem="0Gs-pg-pvK" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="oJN-gJ-F7k"/>
+            </constraints>
+            <point key="canvasLocation" x="-201" y="139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

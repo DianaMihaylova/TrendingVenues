@@ -1,0 +1,1002 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		249347F4437AAF3C5D8E9586 /* Pods_TrendingVenues.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38EB8B7BE99DE8C78D567AA /* Pods_TrendingVenues.framework */; };
+		4424F710266CDFE90013FC9F /* BaseAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424F70F266CDFE90013FC9F /* BaseAPIRequest.swift */; };
+		4424F71B266D17A60013FC9F /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424F71A266D17A60013FC9F /* HomeRepository.swift */; };
+		4424F720266D17B30013FC9F /* HomeRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424F71F266D17B30013FC9F /* HomeRepositoryProtocol.swift */; };
+		4424F726266D1AA70013FC9F /* TrendingVenuesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424F725266D1AA70013FC9F /* TrendingVenuesRequest.swift */; };
+		4424F755266D60B60013FC9F /* TrendingVenueDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424F754266D60B60013FC9F /* TrendingVenueDetailsViewModel.swift */; };
+		4424F75D266D60C00013FC9F /* TrendingVenueDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424F75C266D60C00013FC9F /* TrendingVenueDetailsViewModelProtocol.swift */; };
+		4424F762266D60D30013FC9F /* TrendingVenueDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424F761266D60D30013FC9F /* TrendingVenueDetailsViewController.swift */; };
+		4424F767266D60E60013FC9F /* TrendingVenueDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4424F766266D60E60013FC9F /* TrendingVenueDetailsViewController.xib */; };
+		4424F784266D74880013FC9F /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424F783266D74880013FC9F /* UIImageView+URL.swift */; };
+		44A20526266BA81100FCBBBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A20525266BA81100FCBBBE /* AppDelegate.swift */; };
+		44A2052F266BA81100FCBBBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A2052E266BA81100FCBBBE /* Assets.xcassets */; };
+		44A20532266BA81100FCBBBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A20530266BA81100FCBBBE /* LaunchScreen.storyboard */; };
+		44A2053D266BA81100FCBBBE /* TrendingVenuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2053C266BA81100FCBBBE /* TrendingVenuesTests.swift */; };
+		44A20548266BA81100FCBBBE /* TrendingVenuesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A20547266BA81100FCBBBE /* TrendingVenuesUITests.swift */; };
+		44A20568266BA95000FCBBBE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A20567266BA95000FCBBBE /* AppCoordinator.swift */; };
+		44A2056D266BA99100FCBBBE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2056C266BA99100FCBBBE /* Coordinator.swift */; };
+		44A205B1266BAABF00FCBBBE /* TrendingVenuesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205B0266BAABF00FCBBBE /* TrendingVenuesCoordinator.swift */; };
+		44A205B6266BAAD900FCBBBE /* TrendingVenuesSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205B5266BAAD900FCBBBE /* TrendingVenuesSceneFactory.swift */; };
+		44A205C0266BABC200FCBBBE /* TrendingVenuesHomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205BF266BABC200FCBBBE /* TrendingVenuesHomeViewModelProtocol.swift */; };
+		44A205C8266BABD300FCBBBE /* TrendingVenuesHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205C7266BABD300FCBBBE /* TrendingVenuesHomeViewModel.swift */; };
+		44A205CD266BABEC00FCBBBE /* TrendingVenuesHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205CC266BABEC00FCBBBE /* TrendingVenuesHomeViewController.swift */; };
+		44A205D2266BAC0600FCBBBE /* TrendingVenuesHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A205D1266BAC0600FCBBBE /* TrendingVenuesHomeViewController.xib */; };
+		44A205D7266BACD100FCBBBE /* BaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205D6266BACD100FCBBBE /* BaseDataSource.swift */; };
+		44A205DF266BAD1400FCBBBE /* BaseViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205DE266BAD1400FCBBBE /* BaseViewConfigurator.swift */; };
+		44A205E4266BADA000FCBBBE /* CoordinatableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205E3266BADA000FCBBBE /* CoordinatableViewModel.swift */; };
+		44A205F0266BB4BD00FCBBBE /* UITableView+RegisterCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205EF266BB4BD00FCBBBE /* UITableView+RegisterCells.swift */; };
+		44A205F7266BB56200FCBBBE /* TrendingVenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A205F5266BB56200FCBBBE /* TrendingVenueTableViewCell.swift */; };
+		44A205F8266BB56200FCBBBE /* TrendingVenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A205F6266BB56200FCBBBE /* TrendingVenueTableViewCell.xib */; };
+		44A2066E266BD9D700FCBBBE /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2066D266BD9D700FCBBBE /* UIColor+Custom.swift */; };
+		44A2067B266C2AE300FCBBBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2067A266C2AE300FCBBBE /* BaseViewController.swift */; };
+		44A20680266C2D9B00FCBBBE /* BaseViewController+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2067F266C2D9B00FCBBBE /* BaseViewController+HideKeyboard.swift */; };
+		44A20688266C2E8500FCBBBE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A20687266C2E8500FCBBBE /* Constants.swift */; };
+		44A20690266C338D00FCBBBE /* TrendingVenueCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2068F266C338D00FCBBBE /* TrendingVenueCellData.swift */; };
+		44A20695266C33EB00FCBBBE /* TrendingVenuesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A20694266C33EB00FCBBBE /* TrendingVenuesDTO.swift */; };
+		44A2069D266C386900FCBBBE /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2069C266C386900FCBBBE /* APIRequest.swift */; };
+		44A206A2266C3E7600FCBBBE /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A206A1266C3E7600FCBBBE /* APIManager.swift */; };
+		B48E9B116DBE7267130EDE80 /* Pods_TrendingVenuesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78315ECF25936862E34626DD /* Pods_TrendingVenuesUITests.framework */; };
+		E6E10016EEBE9AEED0081011 /* Pods_TrendingVenuesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B051C9B181707566BD4A1869 /* Pods_TrendingVenuesTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44A20539266BA81100FCBBBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44A2051A266BA81100FCBBBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44A20521266BA81100FCBBBE;
+			remoteInfo = TrendingVenues;
+		};
+		44A20544266BA81100FCBBBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44A2051A266BA81100FCBBBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44A20521266BA81100FCBBBE;
+			remoteInfo = TrendingVenues;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21DB0A4B75376F048D9A7A07 /* Pods-TrendingVenuesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingVenuesTests.debug.xcconfig"; path = "Target Support Files/Pods-TrendingVenuesTests/Pods-TrendingVenuesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4424F70F266CDFE90013FC9F /* BaseAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIRequest.swift; sourceTree = "<group>"; };
+		4424F71A266D17A60013FC9F /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		4424F71F266D17B30013FC9F /* HomeRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryProtocol.swift; sourceTree = "<group>"; };
+		4424F725266D1AA70013FC9F /* TrendingVenuesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenuesRequest.swift; sourceTree = "<group>"; };
+		4424F754266D60B60013FC9F /* TrendingVenueDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenueDetailsViewModel.swift; sourceTree = "<group>"; };
+		4424F75C266D60C00013FC9F /* TrendingVenueDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenueDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
+		4424F761266D60D30013FC9F /* TrendingVenueDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenueDetailsViewController.swift; sourceTree = "<group>"; };
+		4424F766266D60E60013FC9F /* TrendingVenueDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingVenueDetailsViewController.xib; sourceTree = "<group>"; };
+		4424F783266D74880013FC9F /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		44A20522266BA81100FCBBBE /* TrendingVenues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingVenues.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A20525266BA81100FCBBBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44A2052E266BA81100FCBBBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44A20531266BA81100FCBBBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44A20533266BA81100FCBBBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A20538266BA81100FCBBBE /* TrendingVenuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendingVenuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A2053C266BA81100FCBBBE /* TrendingVenuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenuesTests.swift; sourceTree = "<group>"; };
+		44A2053E266BA81100FCBBBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A20543266BA81100FCBBBE /* TrendingVenuesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendingVenuesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A20547266BA81100FCBBBE /* TrendingVenuesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenuesUITests.swift; sourceTree = "<group>"; };
+		44A20549266BA81100FCBBBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A20567266BA95000FCBBBE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		44A2056C266BA99100FCBBBE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		44A205B0266BAABF00FCBBBE /* TrendingVenuesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenuesCoordinator.swift; sourceTree = "<group>"; };
+		44A205B5266BAAD900FCBBBE /* TrendingVenuesSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenuesSceneFactory.swift; sourceTree = "<group>"; };
+		44A205BF266BABC200FCBBBE /* TrendingVenuesHomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenuesHomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		44A205C7266BABD300FCBBBE /* TrendingVenuesHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenuesHomeViewModel.swift; sourceTree = "<group>"; };
+		44A205CC266BABEC00FCBBBE /* TrendingVenuesHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenuesHomeViewController.swift; sourceTree = "<group>"; };
+		44A205D1266BAC0600FCBBBE /* TrendingVenuesHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingVenuesHomeViewController.xib; sourceTree = "<group>"; };
+		44A205D6266BACD100FCBBBE /* BaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataSource.swift; sourceTree = "<group>"; };
+		44A205DE266BAD1400FCBBBE /* BaseViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewConfigurator.swift; sourceTree = "<group>"; };
+		44A205E3266BADA000FCBBBE /* CoordinatableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatableViewModel.swift; sourceTree = "<group>"; };
+		44A205EF266BB4BD00FCBBBE /* UITableView+RegisterCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+RegisterCells.swift"; sourceTree = "<group>"; };
+		44A205F5266BB56200FCBBBE /* TrendingVenueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenueTableViewCell.swift; sourceTree = "<group>"; };
+		44A205F6266BB56200FCBBBE /* TrendingVenueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingVenueTableViewCell.xib; sourceTree = "<group>"; };
+		44A2066D266BD9D700FCBBBE /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		44A2067A266C2AE300FCBBBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		44A2067F266C2D9B00FCBBBE /* BaseViewController+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController+HideKeyboard.swift"; sourceTree = "<group>"; };
+		44A20687266C2E8500FCBBBE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		44A2068F266C338D00FCBBBE /* TrendingVenueCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenueCellData.swift; sourceTree = "<group>"; };
+		44A20694266C33EB00FCBBBE /* TrendingVenuesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVenuesDTO.swift; sourceTree = "<group>"; };
+		44A2069C266C386900FCBBBE /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		44A206A1266C3E7600FCBBBE /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		57E9F60A345000B033F66EB8 /* Pods-TrendingVenues.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingVenues.release.xcconfig"; path = "Target Support Files/Pods-TrendingVenues/Pods-TrendingVenues.release.xcconfig"; sourceTree = "<group>"; };
+		78315ECF25936862E34626DD /* Pods_TrendingVenuesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendingVenuesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		788C3D822B0745F07525462B /* Pods-TrendingVenuesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingVenuesUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrendingVenuesUITests/Pods-TrendingVenuesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		900C6C1263C8562AE48DB474 /* Pods-TrendingVenues.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingVenues.debug.xcconfig"; path = "Target Support Files/Pods-TrendingVenues/Pods-TrendingVenues.debug.xcconfig"; sourceTree = "<group>"; };
+		A38EB8B7BE99DE8C78D567AA /* Pods_TrendingVenues.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendingVenues.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B051C9B181707566BD4A1869 /* Pods_TrendingVenuesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendingVenuesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4A69B75568BF58EF797B25 /* Pods-TrendingVenuesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingVenuesUITests.release.xcconfig"; path = "Target Support Files/Pods-TrendingVenuesUITests/Pods-TrendingVenuesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EE9521E3B0E3FD25775FDABE /* Pods-TrendingVenuesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingVenuesTests.release.xcconfig"; path = "Target Support Files/Pods-TrendingVenuesTests/Pods-TrendingVenuesTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44A2051F266BA81100FCBBBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249347F4437AAF3C5D8E9586 /* Pods_TrendingVenues.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A20535266BA81100FCBBBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E10016EEBE9AEED0081011 /* Pods_TrendingVenuesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A20540266BA81100FCBBBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48E9B116DBE7267130EDE80 /* Pods_TrendingVenuesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A93455B6513E8A7348AE858 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A38EB8B7BE99DE8C78D567AA /* Pods_TrendingVenues.framework */,
+				B051C9B181707566BD4A1869 /* Pods_TrendingVenuesTests.framework */,
+				78315ECF25936862E34626DD /* Pods_TrendingVenuesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		412BBC300CCD82591892AAAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				900C6C1263C8562AE48DB474 /* Pods-TrendingVenues.debug.xcconfig */,
+				57E9F60A345000B033F66EB8 /* Pods-TrendingVenues.release.xcconfig */,
+				21DB0A4B75376F048D9A7A07 /* Pods-TrendingVenuesTests.debug.xcconfig */,
+				EE9521E3B0E3FD25775FDABE /* Pods-TrendingVenuesTests.release.xcconfig */,
+				788C3D822B0745F07525462B /* Pods-TrendingVenuesUITests.debug.xcconfig */,
+				DE4A69B75568BF58EF797B25 /* Pods-TrendingVenuesUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4424F714266CE0B80013FC9F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4424F724266D1A610013FC9F /* Requests */,
+				44A2069C266C386900FCBBBE /* APIRequest.swift */,
+				4424F70F266CDFE90013FC9F /* BaseAPIRequest.swift */,
+				44A206A1266C3E7600FCBBBE /* APIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4424F718266D175B0013FC9F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4424F719266D176D0013FC9F /* HomeRepository */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		4424F719266D176D0013FC9F /* HomeRepository */ = {
+			isa = PBXGroup;
+			children = (
+				4424F71F266D17B30013FC9F /* HomeRepositoryProtocol.swift */,
+				4424F71A266D17A60013FC9F /* HomeRepository.swift */,
+			);
+			path = HomeRepository;
+			sourceTree = "<group>";
+		};
+		4424F724266D1A610013FC9F /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				4424F725266D1AA70013FC9F /* TrendingVenuesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		4424F753266D607C0013FC9F /* TrendingVenueDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4424F761266D60D30013FC9F /* TrendingVenueDetailsViewController.swift */,
+				4424F766266D60E60013FC9F /* TrendingVenueDetailsViewController.xib */,
+				4424F75C266D60C00013FC9F /* TrendingVenueDetailsViewModelProtocol.swift */,
+				4424F754266D60B60013FC9F /* TrendingVenueDetailsViewModel.swift */,
+			);
+			path = TrendingVenueDetails;
+			sourceTree = "<group>";
+		};
+		44A20519266BA81100FCBBBE = {
+			isa = PBXGroup;
+			children = (
+				44A20524266BA81100FCBBBE /* TrendingVenues */,
+				44A2053B266BA81100FCBBBE /* TrendingVenuesTests */,
+				44A20546266BA81100FCBBBE /* TrendingVenuesUITests */,
+				44A20523266BA81100FCBBBE /* Products */,
+				412BBC300CCD82591892AAAB /* Pods */,
+				3A93455B6513E8A7348AE858 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44A20523266BA81100FCBBBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44A20522266BA81100FCBBBE /* TrendingVenues.app */,
+				44A20538266BA81100FCBBBE /* TrendingVenuesTests.xctest */,
+				44A20543266BA81100FCBBBE /* TrendingVenuesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44A20524266BA81100FCBBBE /* TrendingVenues */ = {
+			isa = PBXGroup;
+			children = (
+				4424F718266D175B0013FC9F /* Repositories */,
+				44A2068C266C334400FCBBBE /* Models */,
+				44A20560266BA90300FCBBBE /* Modules */,
+				44A2055F266BA8F500FCBBBE /* Architecture */,
+				44A2055E266BA8E600FCBBBE /* Utils */,
+				44A20525266BA81100FCBBBE /* AppDelegate.swift */,
+				44A2052E266BA81100FCBBBE /* Assets.xcassets */,
+				44A20530266BA81100FCBBBE /* LaunchScreen.storyboard */,
+				44A20533266BA81100FCBBBE /* Info.plist */,
+			);
+			path = TrendingVenues;
+			sourceTree = "<group>";
+		};
+		44A2053B266BA81100FCBBBE /* TrendingVenuesTests */ = {
+			isa = PBXGroup;
+			children = (
+				44A2053C266BA81100FCBBBE /* TrendingVenuesTests.swift */,
+				44A2053E266BA81100FCBBBE /* Info.plist */,
+			);
+			path = TrendingVenuesTests;
+			sourceTree = "<group>";
+		};
+		44A20546266BA81100FCBBBE /* TrendingVenuesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44A20547266BA81100FCBBBE /* TrendingVenuesUITests.swift */,
+				44A20549266BA81100FCBBBE /* Info.plist */,
+			);
+			path = TrendingVenuesUITests;
+			sourceTree = "<group>";
+		};
+		44A2055E266BA8E600FCBBBE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4424F714266CE0B80013FC9F /* Networking */,
+				44A205EE266BB4A500FCBBBE /* Extensions */,
+				44A205D6266BACD100FCBBBE /* BaseDataSource.swift */,
+				44A205DE266BAD1400FCBBBE /* BaseViewConfigurator.swift */,
+				44A205E3266BADA000FCBBBE /* CoordinatableViewModel.swift */,
+				44A2067A266C2AE300FCBBBE /* BaseViewController.swift */,
+				44A20687266C2E8500FCBBBE /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		44A2055F266BA8F500FCBBBE /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				44A20567266BA95000FCBBBE /* AppCoordinator.swift */,
+				44A2056C266BA99100FCBBBE /* Coordinator.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		44A20560266BA90300FCBBBE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				44A20571266BAA5400FCBBBE /* TrendingVenues */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		44A20571266BAA5400FCBBBE /* TrendingVenues */ = {
+			isa = PBXGroup;
+			children = (
+				44A205BD266BAB8000FCBBBE /* Scenes */,
+				44A205B0266BAABF00FCBBBE /* TrendingVenuesCoordinator.swift */,
+				44A205B5266BAAD900FCBBBE /* TrendingVenuesSceneFactory.swift */,
+			);
+			path = TrendingVenues;
+			sourceTree = "<group>";
+		};
+		44A205BD266BAB8000FCBBBE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4424F753266D607C0013FC9F /* TrendingVenueDetails */,
+				44A205BE266BAB8A00FCBBBE /* TrendingVenuesHome */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		44A205BE266BAB8A00FCBBBE /* TrendingVenuesHome */ = {
+			isa = PBXGroup;
+			children = (
+				44A205F4266BB51F00FCBBBE /* TableViewCells */,
+				44A205CC266BABEC00FCBBBE /* TrendingVenuesHomeViewController.swift */,
+				44A205D1266BAC0600FCBBBE /* TrendingVenuesHomeViewController.xib */,
+				44A205BF266BABC200FCBBBE /* TrendingVenuesHomeViewModelProtocol.swift */,
+				44A205C7266BABD300FCBBBE /* TrendingVenuesHomeViewModel.swift */,
+			);
+			path = TrendingVenuesHome;
+			sourceTree = "<group>";
+		};
+		44A205EE266BB4A500FCBBBE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				44A205EF266BB4BD00FCBBBE /* UITableView+RegisterCells.swift */,
+				44A2066D266BD9D700FCBBBE /* UIColor+Custom.swift */,
+				44A2067F266C2D9B00FCBBBE /* BaseViewController+HideKeyboard.swift */,
+				4424F783266D74880013FC9F /* UIImageView+URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		44A205F4266BB51F00FCBBBE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				44A205F5266BB56200FCBBBE /* TrendingVenueTableViewCell.swift */,
+				44A205F6266BB56200FCBBBE /* TrendingVenueTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		44A2068C266C334400FCBBBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44A2068E266C337B00FCBBBE /* AppDomain */,
+				44A2068D266C336C00FCBBBE /* DTO */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44A2068D266C336C00FCBBBE /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				44A20694266C33EB00FCBBBE /* TrendingVenuesDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		44A2068E266C337B00FCBBBE /* AppDomain */ = {
+			isa = PBXGroup;
+			children = (
+				44A2068F266C338D00FCBBBE /* TrendingVenueCellData.swift */,
+			);
+			path = AppDomain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44A20521266BA81100FCBBBE /* TrendingVenues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A2054C266BA81100FCBBBE /* Build configuration list for PBXNativeTarget "TrendingVenues" */;
+			buildPhases = (
+				FF9F2AF6216FC937D2B13A17 /* [CP] Check Pods Manifest.lock */,
+				44A2051E266BA81100FCBBBE /* Sources */,
+				44A2051F266BA81100FCBBBE /* Frameworks */,
+				44A20520266BA81100FCBBBE /* Resources */,
+				7AC4A62F5E55E013F29F5FE1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrendingVenues;
+			productName = TrendingVenues;
+			productReference = 44A20522266BA81100FCBBBE /* TrendingVenues.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44A20537266BA81100FCBBBE /* TrendingVenuesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A2054F266BA81100FCBBBE /* Build configuration list for PBXNativeTarget "TrendingVenuesTests" */;
+			buildPhases = (
+				4EFF6A0A52F6862BA119FB5E /* [CP] Check Pods Manifest.lock */,
+				44A20534266BA81100FCBBBE /* Sources */,
+				44A20535266BA81100FCBBBE /* Frameworks */,
+				44A20536266BA81100FCBBBE /* Resources */,
+				87A28E4E6BBFCC84126AEEC0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44A2053A266BA81100FCBBBE /* PBXTargetDependency */,
+			);
+			name = TrendingVenuesTests;
+			productName = TrendingVenuesTests;
+			productReference = 44A20538266BA81100FCBBBE /* TrendingVenuesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44A20542266BA81100FCBBBE /* TrendingVenuesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A20552266BA81100FCBBBE /* Build configuration list for PBXNativeTarget "TrendingVenuesUITests" */;
+			buildPhases = (
+				E408774A970D4610722FB9FA /* [CP] Check Pods Manifest.lock */,
+				44A2053F266BA81100FCBBBE /* Sources */,
+				44A20540266BA81100FCBBBE /* Frameworks */,
+				44A20541266BA81100FCBBBE /* Resources */,
+				30A24B119992C8D9B07CF08C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44A20545266BA81100FCBBBE /* PBXTargetDependency */,
+			);
+			name = TrendingVenuesUITests;
+			productName = TrendingVenuesUITests;
+			productReference = 44A20543266BA81100FCBBBE /* TrendingVenuesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44A2051A266BA81100FCBBBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					44A20521266BA81100FCBBBE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					44A20537266BA81100FCBBBE = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 44A20521266BA81100FCBBBE;
+					};
+					44A20542266BA81100FCBBBE = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 44A20521266BA81100FCBBBE;
+					};
+				};
+			};
+			buildConfigurationList = 44A2051D266BA81100FCBBBE /* Build configuration list for PBXProject "TrendingVenues" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44A20519266BA81100FCBBBE;
+			productRefGroup = 44A20523266BA81100FCBBBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44A20521266BA81100FCBBBE /* TrendingVenues */,
+				44A20537266BA81100FCBBBE /* TrendingVenuesTests */,
+				44A20542266BA81100FCBBBE /* TrendingVenuesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44A20520266BA81100FCBBBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A205F8266BB56200FCBBBE /* TrendingVenueTableViewCell.xib in Resources */,
+				44A20532266BA81100FCBBBE /* LaunchScreen.storyboard in Resources */,
+				44A2052F266BA81100FCBBBE /* Assets.xcassets in Resources */,
+				44A205D2266BAC0600FCBBBE /* TrendingVenuesHomeViewController.xib in Resources */,
+				4424F767266D60E60013FC9F /* TrendingVenueDetailsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A20536266BA81100FCBBBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A20541266BA81100FCBBBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30A24B119992C8D9B07CF08C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingVenuesUITests/Pods-TrendingVenuesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingVenuesUITests/Pods-TrendingVenuesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrendingVenuesUITests/Pods-TrendingVenuesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EFF6A0A52F6862BA119FB5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrendingVenuesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AC4A62F5E55E013F29F5FE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingVenues/Pods-TrendingVenues-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingVenues/Pods-TrendingVenues-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrendingVenues/Pods-TrendingVenues-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A28E4E6BBFCC84126AEEC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingVenuesTests/Pods-TrendingVenuesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingVenuesTests/Pods-TrendingVenuesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrendingVenuesTests/Pods-TrendingVenuesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E408774A970D4610722FB9FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrendingVenuesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF9F2AF6216FC937D2B13A17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrendingVenues-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44A2051E266BA81100FCBBBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A2066E266BD9D700FCBBBE /* UIColor+Custom.swift in Sources */,
+				44A20688266C2E8500FCBBBE /* Constants.swift in Sources */,
+				44A20568266BA95000FCBBBE /* AppCoordinator.swift in Sources */,
+				44A205F7266BB56200FCBBBE /* TrendingVenueTableViewCell.swift in Sources */,
+				4424F75D266D60C00013FC9F /* TrendingVenueDetailsViewModelProtocol.swift in Sources */,
+				44A20526266BA81100FCBBBE /* AppDelegate.swift in Sources */,
+				44A205CD266BABEC00FCBBBE /* TrendingVenuesHomeViewController.swift in Sources */,
+				4424F71B266D17A60013FC9F /* HomeRepository.swift in Sources */,
+				44A206A2266C3E7600FCBBBE /* APIManager.swift in Sources */,
+				44A20690266C338D00FCBBBE /* TrendingVenueCellData.swift in Sources */,
+				44A205D7266BACD100FCBBBE /* BaseDataSource.swift in Sources */,
+				4424F720266D17B30013FC9F /* HomeRepositoryProtocol.swift in Sources */,
+				44A205C0266BABC200FCBBBE /* TrendingVenuesHomeViewModelProtocol.swift in Sources */,
+				44A205C8266BABD300FCBBBE /* TrendingVenuesHomeViewModel.swift in Sources */,
+				44A205E4266BADA000FCBBBE /* CoordinatableViewModel.swift in Sources */,
+				4424F755266D60B60013FC9F /* TrendingVenueDetailsViewModel.swift in Sources */,
+				44A205DF266BAD1400FCBBBE /* BaseViewConfigurator.swift in Sources */,
+				44A20680266C2D9B00FCBBBE /* BaseViewController+HideKeyboard.swift in Sources */,
+				44A2056D266BA99100FCBBBE /* Coordinator.swift in Sources */,
+				4424F784266D74880013FC9F /* UIImageView+URL.swift in Sources */,
+				44A20695266C33EB00FCBBBE /* TrendingVenuesDTO.swift in Sources */,
+				4424F726266D1AA70013FC9F /* TrendingVenuesRequest.swift in Sources */,
+				44A205B1266BAABF00FCBBBE /* TrendingVenuesCoordinator.swift in Sources */,
+				44A2067B266C2AE300FCBBBE /* BaseViewController.swift in Sources */,
+				44A205F0266BB4BD00FCBBBE /* UITableView+RegisterCells.swift in Sources */,
+				44A2069D266C386900FCBBBE /* APIRequest.swift in Sources */,
+				44A205B6266BAAD900FCBBBE /* TrendingVenuesSceneFactory.swift in Sources */,
+				4424F762266D60D30013FC9F /* TrendingVenueDetailsViewController.swift in Sources */,
+				4424F710266CDFE90013FC9F /* BaseAPIRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A20534266BA81100FCBBBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A2053D266BA81100FCBBBE /* TrendingVenuesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A2053F266BA81100FCBBBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A20548266BA81100FCBBBE /* TrendingVenuesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44A2053A266BA81100FCBBBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44A20521266BA81100FCBBBE /* TrendingVenues */;
+			targetProxy = 44A20539266BA81100FCBBBE /* PBXContainerItemProxy */;
+		};
+		44A20545266BA81100FCBBBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44A20521266BA81100FCBBBE /* TrendingVenues */;
+			targetProxy = 44A20544266BA81100FCBBBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44A20530266BA81100FCBBBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44A20531266BA81100FCBBBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44A2054A266BA81100FCBBBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44A2054B266BA81100FCBBBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44A2054D266BA81100FCBBBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900C6C1263C8562AE48DB474 /* Pods-TrendingVenues.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LXGJ5D2LY;
+				INFOPLIST_FILE = TrendingVenues/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.TrendingVenues;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		44A2054E266BA81100FCBBBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E9F60A345000B033F66EB8 /* Pods-TrendingVenues.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LXGJ5D2LY;
+				INFOPLIST_FILE = TrendingVenues/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.TrendingVenues;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		44A20550266BA81100FCBBBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DB0A4B75376F048D9A7A07 /* Pods-TrendingVenuesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LXGJ5D2LY;
+				INFOPLIST_FILE = TrendingVenuesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.TrendingVenuesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrendingVenues.app/TrendingVenues";
+			};
+			name = Debug;
+		};
+		44A20551266BA81100FCBBBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE9521E3B0E3FD25775FDABE /* Pods-TrendingVenuesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LXGJ5D2LY;
+				INFOPLIST_FILE = TrendingVenuesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.TrendingVenuesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrendingVenues.app/TrendingVenues";
+			};
+			name = Release;
+		};
+		44A20553266BA81100FCBBBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788C3D822B0745F07525462B /* Pods-TrendingVenuesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LXGJ5D2LY;
+				INFOPLIST_FILE = TrendingVenuesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.TrendingVenuesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrendingVenues;
+			};
+			name = Debug;
+		};
+		44A20554266BA81100FCBBBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4A69B75568BF58EF797B25 /* Pods-TrendingVenuesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9LXGJ5D2LY;
+				INFOPLIST_FILE = TrendingVenuesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.TrendingVenuesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TrendingVenues;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44A2051D266BA81100FCBBBE /* Build configuration list for PBXProject "TrendingVenues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44A2054A266BA81100FCBBBE /* Debug */,
+				44A2054B266BA81100FCBBBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44A2054C266BA81100FCBBBE /* Build configuration list for PBXNativeTarget "TrendingVenues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44A2054D266BA81100FCBBBE /* Debug */,
+				44A2054E266BA81100FCBBBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44A2054F266BA81100FCBBBE /* Build configuration list for PBXNativeTarget "TrendingVenuesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44A20550266BA81100FCBBBE /* Debug */,
+				44A20551266BA81100FCBBBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44A20552266BA81100FCBBBE /* Build configuration list for PBXNativeTarget "TrendingVenuesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44A20553266BA81100FCBBBE /* Debug */,
+				44A20554266BA81100FCBBBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44A2051A266BA81100FCBBBE /* Project object */;
+}
