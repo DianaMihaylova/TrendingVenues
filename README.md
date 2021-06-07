@@ -1,1 +1,1 @@
-# trending-app
+# Trending venues app
